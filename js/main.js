@@ -161,7 +161,7 @@ const app = new Vue({
     template: `
     <div id="app">
         <div>
-            <h2>Создать новую заметку</h2>
+            <h2>Create a new note</h2>
             <form @submit.prevent="addNewCard">
                 <div>
                     <label for="title">Title:</label>
@@ -173,7 +173,7 @@ const app = new Vue({
                         <input v-model="newCard.list[index]" type="text" :placeholder="'Item ' + (index + 1)" required />
                         <button v-if="newCard.list.length > 3" type="button" @click="removeItem(index)">✖</button>
                     </div>
-                    <button v-if="newCard.list.length < 5" type="button" @click="addItem">Добавить пункт</button>
+                    <button v-if="newCard.list.length < 5" type="button" @click="addItem">Add item</button>
                 </div>
                 <button type="submit" :disabled="blockFirstColumn">Add Note</button>
             </form>

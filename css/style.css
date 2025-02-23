@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 300px;
+    width: 400px;
     border-radius: 10px;
     background-color: white;
     border: black;
@@ -28,13 +28,9 @@ body {
     transition: transform 0.3s ease;
 }
 
-.column:hover {
-    transform: translateY(-5px);
-}
-
 h2 {
     font-size: 1.5em;
-    color: #000;
+    color: blueviolet;
     margin-bottom: 15px;
     font-weight: bold;
     text-align: center;
@@ -78,6 +74,7 @@ h2 {
 }
 
 .card input {
+    color: #6c63ff;
     margin-right: 10px;
     accent-color: #6c63ff;
     transform: scale(1.2);
@@ -85,7 +82,7 @@ h2 {
 
 .card p {
     font-size: 12px;
-    color: #888;
+    color: #6c63ff;
     margin-top: 10px;
     text-align: center;
 }
@@ -122,7 +119,7 @@ input[type="text"]:focus {
 .columns-container {
     display: flex;
     flex-direction: row;
-    gap: 210px;
+    gap: 20px;
 }
 
 form {
@@ -131,7 +128,7 @@ form {
     background-color: #fff;
     border-radius: 8px;
     border: 1px solid #ccc;
-    width: 100%;
+    width: 350px;
     max-width: 400px;
     box-sizing: border-box;
 }
