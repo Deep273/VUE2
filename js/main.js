@@ -10,6 +10,18 @@ const app = new Vue({
             blockFirstColumn: false,
         };
     },
+    methods: {
+        moveCard(cardIndex, columnIndex) {
+            const card = this.columns[cardIndex.column - 1].cards.splice(cardIndex.index, 1)[0];
+            this.columns[columnIndex - 1].cards.push(card);
+            this.saveData();
+        },
+        saveData() {
+            localStorage.setItem('column1', JSON.stringify(this.columns[0].cards));
+            localStorage.setItem('column2', JSON.stringify(this.columns[1].cards));
+            localStorage.setItem('column3', JSON.stringify(this.columns[2].cards));
+        },
+    },
     components: {
         Card: {
             props: {
@@ -76,4 +88,15 @@ const app = new Vue({
             `,
         },
     },
+    template: `
+    <div id="app">
+      <Column
+        v-for="(column, index) in columns"
+        :key="index"
+        :columnNumber="index + 1"
+        :cards="column.cards"
+        :moveCard="moveCard"
+      />
+    </div>
+  `,
 });
