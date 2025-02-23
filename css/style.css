@@ -79,7 +79,7 @@ h2 {
 
 .card input {
     margin-right: 10px;
-    accent-color: #4caf50;
+    accent-color: #6c63ff;
     transform: scale(1.2);
 }
 
@@ -91,7 +91,6 @@ h2 {
 }
 
 button {
-    background-color: #ff5733;
     color: white;
     border: none;
     border-radius: 5px;
@@ -99,10 +98,6 @@ button {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #e04e29;
 }
 
 button:disabled {
@@ -121,7 +116,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
     outline: none;
-    border-color: #4caf50;
+    border-color: #6c63ff;
 }
 
 .columns-container {
@@ -137,17 +132,17 @@ form {
     border-radius: 8px;
     border: 1px solid #ccc;
     width: 100%;
-    max-width: 400px; /* Ограничим ширину формы */
+    max-width: 400px;
     box-sizing: border-box;
 }
 
 form div {
-    margin-bottom: 15px; /* Увеличим отступы для лучшего выравнивания */
+    margin-bottom: 15px;
 }
 
 form label {
     display: block;
-    margin-bottom: 8px; /* Добавляем отступ снизу для лучшего разделения */
+    margin-bottom: 8px;
     font-size: 14px;
     font-weight: 600;
     color: #333;
@@ -155,33 +150,33 @@ form label {
 
 form input {
     width: 100%;
-    padding: 10px; /* Увеличим внутренний отступ для улучшения читаемости */
+    padding: 10px;
     margin: 5px 0;
     border-radius: 4px;
     border: 1px solid #ccc;
-    box-sizing: border-box; /* Убедимся, что padding не влияет на ширину */
+    box-sizing: border-box;
     font-size: 14px;
 }
 
 form input:focus {
     outline: none;
-    border-color: #6c63ff; /* Синяя рамка при фокусе для выделения поля */
+    border-color: #6c63ff;
 }
 
 form button {
     padding: 12px 20px;
-    background-color: #6c63ff;
+    background-color: blueviolet;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%; /* Кнопка занимает всю ширину */
+    width: 100%;
     font-size: 16px;
     font-weight: 600;
 }
 
 form button:hover {
-    background-color: #5a54e6;
+    background-color: #6c63ff;
 }
 
 form button:disabled {
