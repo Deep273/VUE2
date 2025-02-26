@@ -182,3 +182,21 @@ form button:disabled {
 }
 
 
+.timestamp {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 10px;
+}
+
+.completed-timestamp {
+    font-size: 1.1em;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.priority-card {
+    border: 2px solid #8a42ff;
+    background-color: #ffdcb9;
+}
+
